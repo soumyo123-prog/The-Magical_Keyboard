@@ -1,0 +1,24 @@
+.Github:link{
+    width : 15%;
+    height : 100px;
+    position: absolute;
+    right: 15%;
+    text-align : center;
+    font-size : 1.3em;
+    text-decoration: none;
+}
+
+.Github:hover .Gcontainer, .Github:active .Gcontainer{
+    color : black;
+    background-color : #a1e1e3;
+}
+
+.Gcontainer{
+    width : 100%;
+    height : 100%;
+    color : white;
+}
+
+.GithubIcon{
+    font-size: 2em;
+}

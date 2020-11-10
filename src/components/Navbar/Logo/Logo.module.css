@@ -1,0 +1,13 @@
+.Logo img{
+    width : 80px;
+    height : 75px;
+    border-radius : 6px;
+}
+
+.Logo{
+    position : relative;
+    width : 80px;
+    height : 75px;
+    left : 10px;
+    top : 10px;
+}

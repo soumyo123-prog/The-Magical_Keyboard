@@ -1,0 +1,25 @@
+.Keyboard{
+    padding : 30px;
+    margin : auto;
+    height : 320px;
+    background-size: cover;
+    border-radius: 10px;
+    border : 2px solid black;
+}
+
+@media (min-width: 1200px){
+    .Keyboard {
+        width : 1100px;
+    }
+}
+
+@media (min-width : 900px) and (max-width:1199px){
+    .Keyboard {
+        width : 900px;
+    }
+}
+@media (max-width : 899px){
+    .Keyboard {
+        width : 768px;
+    }
+}

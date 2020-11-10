@@ -1,0 +1,18 @@
+.Controls{
+    width : 15%;
+    text-align: center;
+    height : 100px;
+    position: absolute;
+    right : 30%;
+    font-size : 1.3em;
+}
+
+.Controls:hover{
+    background-color : #a1e1e3;
+    color : black;
+}
+
+.ControlsIcon{
+    font-size : 1.7em;
+}
+

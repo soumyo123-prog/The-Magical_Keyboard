@@ -1,0 +1,71 @@
+*{
+    box-sizing : border-box;
+}
+
+.Container{
+    width : 100%;
+    overflow: auto;
+    display : flex;
+    position: relative;
+}
+
+.Container li{
+    list-style: none;
+}
+
+.WhiteButton{
+    border : 1px solid black;
+    background: white;
+    width : 100%;
+    height: 100%;
+}
+
+.BlackButton{
+    background-image: linear-gradient(to bottom right, black,rgb(117, 112, 97),rgb(115, 128, 120));
+    width : 100%;
+    height: 100%;
+    border : 0;
+}
+
+.White{
+    width : 25%;
+    height : 250px;
+    position: relative;
+    z-index: 10;
+}
+
+.Black1{
+    width : 15%;
+    height : 175px;
+    position: absolute;
+    left : 17%;
+    z-index: 20;
+}
+
+.Black2{
+    width : 15%;
+    height : 175px;
+    position: absolute;
+    z-index : 20;
+    left : 42%;
+}
+.Black3{
+    width : 15%;
+    height : 175px;
+    position: absolute;
+    z-index: 20;
+    left : 67.5%;
+}
+
+.BlackButton:active
+{
+    background-image: linear-gradient(to bottom right, black,rgb(117, 112, 97));
+}
+
+.WhiteButton:active{
+    background-image: linear-gradient(to bottom right,rgb(166, 163, 168), white);
+}
+
+.Active{
+    background-image: linear-gradient(to bottom right,rgb(166, 163, 168), white);
+}

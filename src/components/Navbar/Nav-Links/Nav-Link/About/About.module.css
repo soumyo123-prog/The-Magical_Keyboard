@@ -1,0 +1,18 @@
+.About{
+    width : 15%;
+    text-align: center;
+    height : 100px;
+    position: absolute;
+    right: 0;
+    color : white;
+    font-size : 1.3em;
+}
+
+.AboutIcon{
+    font-size : 1.6em;
+}
+
+.About:hover{
+    background-color : #a1e1e3;
+    color : black;
+}
