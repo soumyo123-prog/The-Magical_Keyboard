@@ -1,9 +1,9 @@
 .Modal{
     background-color : white;
     width : 70%;
-    height : 400px;
+    height : 500px;
     position: fixed;
-    z-index : 500;
+    z-index : 999;
     right : 15%;
     top : 15%;
 }

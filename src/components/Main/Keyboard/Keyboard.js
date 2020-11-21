@@ -5,6 +5,7 @@ import active from './Patterns/Pattern1/Pattern1.module.css';
 import { HotKeys } from  'react-hotkeys';
 import {fullKeyMap, fullHandlers} from './Patterns/Pattern2/Pattern2';
 import {keyMap, handlers} from './Patterns/Pattern1/Pattern1';
+import Recording from './RecordingBar/Recording';
 
 const activeClass = [classes.WhiteButton];
 
@@ -24,6 +25,7 @@ class Keyboard extends Component{
                         tabIndex = "0"
                         onKeyDown  = {keyPressHandler}
                     >
+                        <Recording />
                         <Keys />
                     </div>
                 </HotKeys>

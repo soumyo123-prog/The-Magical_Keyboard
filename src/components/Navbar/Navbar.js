@@ -6,8 +6,10 @@ import Links from './Nav-Links/NavLinks';
 const navBar = props => {
     return (
         <div className = {classes.Navbar}>
-            <Logo />
-            <Links />
+            <div className = {classes.RealNavbar}>
+                <Logo />
+                <Links />
+            </div>
         </div>
     )
 }

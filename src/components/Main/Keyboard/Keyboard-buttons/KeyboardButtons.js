@@ -6,7 +6,7 @@ import Pattern2 from '../Patterns/Pattern2/Pattern2';
 
 const keys = props => {
     return(
-        <Aux>
+        <div>
             <div className = {classes.ButtonContainerBig}>
                 <Pattern1 />
             </div>
@@ -25,7 +25,7 @@ const keys = props => {
             <div className = {classes.ButtonContainerSmall}>
                 <Pattern2 />
             </div>
-        </Aux>
+        </div>
     )
 }
 

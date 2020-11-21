@@ -14,9 +14,10 @@ const about = props => {
                 onClick = {props.clicked}
             >
                 <div className = {classes.AboutIcon}>
-                    <FontAwesomeIcon icon = {faInfoCircle} />
+                    <div><FontAwesomeIcon icon = {faInfoCircle} /></div>
+                    About
                 </div>
-                About
+                
             </div>
             <Backdrop 
                 showBackdrop = {props.show}

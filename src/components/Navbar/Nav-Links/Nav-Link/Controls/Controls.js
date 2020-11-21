@@ -15,9 +15,9 @@ class Controls extends React.Component {
                     className = {classes.Controls}
                 >
                     <div className = {classes.ControlsIcon}>
-                        <FontAwesomeIcon icon = {faGamepad}></FontAwesomeIcon>
+                        <div><FontAwesomeIcon icon = {faGamepad} /></div>
+                        Controls
                     </div>
-                    Controls
                 </div>
                 <Backdrop
                     showBackdrop = {this.props.show}
