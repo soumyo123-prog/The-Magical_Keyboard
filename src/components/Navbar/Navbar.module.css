@@ -4,7 +4,6 @@
     height : 75px;
     margin-bottom : 50px;
     color : white;
-    position : sticky;
     display : flex;
 }
 
@@ -13,4 +12,26 @@
     width : 77%;
     display : flex;
     margin : auto;
+}
+
+.Bars{
+    width : 10%;
+    position: absolute;
+    top : 15%;
+    left : 90%;
+    display : none;
+    font-size : 2em;
+    margin-top : auto;
+    margin-bottom : auto;
+}
+
+.Bars:hover,.Bars:focus,.Bars:active{
+    cursor : pointer;
+    border : 1px solid white;
+}
+
+@media (max-width: 750px){
+    .Bars{
+        display : block;
+    }
 }

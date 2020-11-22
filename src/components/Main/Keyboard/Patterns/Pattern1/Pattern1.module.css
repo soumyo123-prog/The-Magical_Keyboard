@@ -69,3 +69,12 @@
 .Active{
     background-image: linear-gradient(to bottom right,rgb(166, 163, 168), white);
 }
+
+.WhiteButton:hover{
+    background-color: #c5d4ed;
+}
+
+.BlackButton:hover{
+    background-image : none;
+    background-color: #41464f
+}

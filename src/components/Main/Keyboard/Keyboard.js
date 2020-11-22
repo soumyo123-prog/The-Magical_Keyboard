@@ -6,14 +6,7 @@ import { HotKeys } from  'react-hotkeys';
 import {fullKeyMap, fullHandlers} from './Patterns/Pattern2/Pattern2';
 import {keyMap, handlers} from './Patterns/Pattern1/Pattern1';
 import Recording from './RecordingBar/Recording';
-
-const activeClass = [classes.WhiteButton];
-
-const keyPressHandler = event => {
-    if (event.repeat){
-        console.log("repeat");
-    }
-}
+import Features from '../Features/Features';
 
 class Keyboard extends Component{
     render(){
@@ -23,10 +16,10 @@ class Keyboard extends Component{
                     <div 
                         className = {classes.Keyboard} 
                         tabIndex = "0"
-                        onKeyDown  = {keyPressHandler}
                     >
                         <Recording />
                         <Keys />
+                        <Features />
                     </div>
                 </HotKeys>
             </HotKeys>

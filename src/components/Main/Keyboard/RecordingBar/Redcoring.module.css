@@ -1,5 +1,5 @@
 .Recording{
-    background : #808080;
+    background : #d4bfae;
     height : 180px;
     display : flex;
 }
@@ -51,6 +51,17 @@
     background : linear-gradient(to right, #0320ff, #0215a6);
 }
 
+.DeleteButton{
+    box-sizing: border-box;
+    background : transparent;
+    border : 0;
+    font-size : 1.5em;
+    color : red;
+    font-style : italic;
+    cursor : pointer;
+    padding : 0;
+}
+
 .Visual{
     width : 100%;
     background : white;
@@ -71,7 +82,7 @@
 }
 
 .AudioControls::-webkit-media-controls-panel{
-    background : #222623;  
+    background : #ad9c8e;  
 }
 
 .AudioControls::-webkit-media-controls-current-time-display,.AudioControls::-webkit-media-controls-time-remaining-display{

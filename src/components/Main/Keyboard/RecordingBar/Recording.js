@@ -12,8 +12,7 @@ class Recording extends React.Component{
     }
 
     state = {
-        error : null,
-        paused : false
+        error : null
     }
     
     componentDidMount (){
@@ -39,6 +38,12 @@ class Recording extends React.Component{
                     mediaRecorder.stop();
                     this.record.current.disabled = false;
                     this.stop.current.disabled = true;
+                    
+                    this.setState(prevState => {
+                        return {
+                            counter : prevState.counter + 1
+                        }
+                    })
                 }
 
                 mediaRecorder.ondataavailable = (event) => {
@@ -56,9 +61,11 @@ class Recording extends React.Component{
                     const hr = document.createElement('hr');
 
                     deleteButton.innerHTML = 'Delete';
+                    deleteButton.className = classes.DeleteButton
                     clipContainer.className = classes.Player;
                     hr.className = classes.hr;
                     audio.className = classes.AudioControls;
+                    clipLabel.className = classes.ClipLabel;
                     
                     if(name.trim() === ''){
                         clipLabel.innerHTML = "Unnamed Clip"
@@ -66,7 +73,7 @@ class Recording extends React.Component{
                     else{
                         clipLabel.innerHTML = name;
                     }
-
+                    
                     clipContainer.appendChild(audio);
                     clipContainer.appendChild(clipLabel);
                     clipContainer.appendChild(deleteButton);
@@ -78,12 +85,10 @@ class Recording extends React.Component{
                     newChunk = [];
                     const audioURL = window.URL.createObjectURL(blob);
                     audio.src = audioURL;
-                    // audioPlayer.push(
-                    //     <Player key = {name} source = {audioURL} clipName = {name} />
-                    // 
-
-                    console.log("recorder stopped")
-
+                   
+                    deleteButton.onclick = event => {
+                        event.target.parentNode.remove();
+                    }
                 }
             })
             .catch(err => {

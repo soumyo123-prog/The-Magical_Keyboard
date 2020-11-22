@@ -1,0 +1,18 @@
+.Footer{
+    width: 100%;
+    background-image : linear-gradient(to right, #082575, #092d91, #0d3ab8, #134ef2, #0e73ad, #11a3f7);
+    color : white;
+    margin-top : 50px;
+    font-size : 1.2em;
+    padding : 20px;
+}
+
+.Social {
+    list-style: none;
+    width : 30%;
+}
+
+.Social a{
+    color : white;
+    font-size : 2.5rem;
+}

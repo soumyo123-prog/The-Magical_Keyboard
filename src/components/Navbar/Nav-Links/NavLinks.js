@@ -1,6 +1,5 @@
 import classes from './NavLinks.module.css';
 import React from 'react';
-import Aux from '../../../hoc/Auxilliary';
 import Github from './Nav-Link/Github/Github';
 import Controls from './Nav-Link/Controls/Controls';
 import About from './Nav-Link/About/About';
@@ -37,7 +36,7 @@ class NavLinks extends React.Component {
 
     render() {
         return (
-            <Aux>
+            <div className = {classes.Links}>
                 <Github />
                 <Controls 
                     show = {this.state.showControls}
@@ -49,7 +48,7 @@ class NavLinks extends React.Component {
                     clicked = {this.showAboutHandler}
                     hide = {this.hideAboutHandler}
                 />
-            </Aux>
+            </div>
         )
     }
 }

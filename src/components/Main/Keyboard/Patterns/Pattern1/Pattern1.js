@@ -7,6 +7,7 @@ import B from '../../../../../assets/audio/B.wav';
 import GB from '../../../../../assets/audio/GB.wav';
 import AB from '../../../../../assets/audio/AB.wav';
 import BB from '../../../../../assets/audio/BB.wav';
+import {enabled} from '../../../Features/PlayHover/onHover';
 
 const playAudio = (src) => {
     var a = new Audio(src);
@@ -16,6 +17,12 @@ const playAudio = (src) => {
 const keyPlayAudio = src =>{
     var a = new Audio(src);
     a.play();
+}
+
+const MouseEventHandler = (src) => {
+    if (enabled){
+        playAudio(src);
+    }
 }
 
 const keyMap = {
@@ -47,42 +54,49 @@ const PatternB = props => {
                 <button
                     onClick={() => playAudio(F)}
                     className = {whiteClass.join(' ')}
+                    onMouseOver = {() => MouseEventHandler(F)}
                 ></button>
             </li>
             <li className={classes.Black1}>
                 <button 
                     onClick={() => playAudio(GB)} 
                     className = {classes.BlackButton}
+                    onMouseOver = {() => MouseEventHandler(GB)}
                 ></button>
             </li>
             <li className={classes.White}>
                 <button 
                     onClick={() => playAudio(G)} 
                     className = {classes.WhiteButton}
+                    onMouseOver = {() => MouseEventHandler(G)}
                 ></button>
             </li>
             <li className={classes.Black2}>
                 <button 
                     onClick={() => playAudio(AB)} 
                     className = {classes.BlackButton}
+                    onMouseOver = {() => MouseEventHandler(AB)}
                 ></button>
             </li>
             <li className={classes.White}>
                 <button 
                     onClick={() => playAudio(A)} 
                     className = {classes.WhiteButton} 
+                    onMouseOver = {() => MouseEventHandler(A)}
                 ></button>
             </li>
             <li className={classes.Black3}>
                 <button 
                     onClick={() => playAudio(BB)} 
                     className = {classes.BlackButton}
+                    onMouseOver = {() => MouseEventHandler(BB)}
                 ></button>
             </li>
             <li className={classes.White}>
                 <button 
                     onClick={() => playAudio(B)} 
                     className = {classes.WhiteButton}
+                    onMouseOver = {() => MouseEventHandler(B)}
                 ></button>
             </li>
         </div>
