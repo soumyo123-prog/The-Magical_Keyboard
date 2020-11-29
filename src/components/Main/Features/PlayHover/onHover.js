@@ -6,10 +6,12 @@ let enabled = false;
 class OnHover extends React.Component {
     onCheckHandler = event => {
         if (event.target.checked){
+            event.target.parentElement.style.backgroundColor = "#5b98f5";
             enabled = true;
         }
         else{
-           enabled = false;
+            event.target.parentElement.style.backgroundColor = "#bfacac";
+            enabled = false;
         }
     }
 
@@ -18,8 +20,9 @@ class OnHover extends React.Component {
             <section className = {classes.Hover}>
                 <div className = {classes.Slide}>
                     <input type = "checkbox" onChange={this.onCheckHandler}/>
-                    Play with Hover
+                    <span className = {classes.Switch} />
                 </div>
+                <div>Play with Hover</div>
             </section>
         )
     }

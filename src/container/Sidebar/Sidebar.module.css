@@ -1,12 +1,41 @@
 .Sidebar{
-   width : 300px;
-   height : 100%;
-   background : white; 
-   display : none;
-   position : fixed;
-   top : 0;
-   right: 0;
-   z-index: 600;
+    padding : 0;
+    margin : 0;
+    width : 60%;
+    height : 100%;
+    list-style : none;
+    color : white;
+    display : none;
+    position : fixed;
+    top : 0;
+    right: 0;
+    z-index: 600;
+    font-size : 1.5em;
+    background-image : linear-gradient(to bottom,#11a3f7,#0e73ad,#134ef2); 
+}
+
+.Sidebar hr{
+    width : 100%;
+    border : 0.5px solid white;
+}
+
+.Sidebar li{
+    margin-top : 30px;
+    margin-bottom:  30px;
+}
+
+.Github a{
+    color : white;
+    text-decoration: none;
+}
+
+.Github a:hover{
+    cursor : pointer;
+    color: yellow;
+}
+
+.GithubIcon{
+    font-size : 1.5em;
 }
 
 @media (max-width : 750px){

@@ -8,7 +8,7 @@ class Keys extends React.Component {
     
     render(){
         return(
-            <div>
+            <div className = {classes.Buttons}>
                 <div className = {classes.ButtonContainerBig}>
                     <Pattern1 />
                 </div>
